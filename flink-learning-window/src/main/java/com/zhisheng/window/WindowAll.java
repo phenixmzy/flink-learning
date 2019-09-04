@@ -12,9 +12,6 @@ import static com.zhisheng.constant.WindowConstant.PORT;
 
 /**
  * Desc: timeWindow All
- * Created by zhisheng on 2019-06-18
- * blog：http://www.54tianzhisheng.cn/
- * 微信公众号：zhisheng
  */
 public class WindowAll {
     public static void main(String[] args) throws Exception {

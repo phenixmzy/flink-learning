@@ -24,7 +24,7 @@
 
     <properties>
         <compiler.version>1.8</compiler.version>
-        <flink.version>1.8.0</flink.version>
+        <flink.version>1.9.0</flink.version>
         <java.version>1.8</java.version>
         <scala.binary.version>2.11</scala.binary.version>
 
@@ -56,6 +56,14 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.25</version>
         </dependency>
+        <!--window-->
+        <dependency>
+            <groupId>jdk.tools</groupId>
+            <artifactId>jdk.tools</artifactId>
+            <version>1.8</version>
+            <scope>system</scope>
+            <systemPath>C:\Program Files\Java\jdk1.8.0_191\lib\tools.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <!-- This profile helps to make things run out of the box in IntelliJ -->
@@ -81,4 +89,20 @@
             </dependencies>
         </profile>
     </profiles>
+
+    <!--window-->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <fork>true</fork>
+                    <executable>C:\Program Files\Java\jdk1.8.0_191\bin\javac</executable>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
