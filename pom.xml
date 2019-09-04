@@ -57,6 +57,7 @@
             <version>1.7.25</version>
         </dependency>
         <!--window-->
+        <!--
         <dependency>
             <groupId>jdk.tools</groupId>
             <artifactId>jdk.tools</artifactId>
@@ -64,6 +65,7 @@
             <scope>system</scope>
             <systemPath>C:\Program Files\Java\jdk1.8.0_191\lib\tools.jar</systemPath>
         </dependency>
+        -->
     </dependencies>
 
     <!-- This profile helps to make things run out of the box in IntelliJ -->
@@ -72,7 +74,6 @@
     <profiles>
         <profile>
             <id>add-dependencies-for-IDEA</id>
-
             <activation>
                 <property>
                     <name>idea.version</name>
@@ -90,9 +91,11 @@
         </profile>
     </profiles>
 
-    <!--window-->
+
     <build>
         <plugins>
+            <!--window-->
+            <!--
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
@@ -103,6 +106,7 @@
                     <executable>C:\Program Files\Java\jdk1.8.0_191\bin\javac</executable>
                 </configuration>
             </plugin>
+            -->
         </plugins>
     </build>
 </project>
